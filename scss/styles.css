@@ -1,0 +1,14 @@
+/*
+ROUND EXPERIMENT
+*/
+
+body {
+    background-color: red;
+}
+
+.round1 {
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

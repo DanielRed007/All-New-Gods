@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+/*
+effects variables
+*/
+
+
+
+/*
+font variables
+*/
+
+$titleFont: 'Righteous';
+$textFont: 'Comfortaa';
+
+/*
+color variables
+*/
+
+$green: #106E45;
+$orange: #FFAB00;
+$blue: #012873;
+$dark: #221E26;
+$white: #FFF8D8;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+HEAD SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#head {
+    width: 100%;
+    height: 120px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #title {
+        position: absolute;
+        top: 0;
+        left: 40px;
+        color: $dark;
+        font: {
+            family: $titleFont;
+            size: 100px;
+        }
+    }
+    #icons {
+        position: absolute;
+        top: 20px;
+        left: 700px;
+        cursor: pointer;
+        transition: 0.5s;
+        font: {
+            size: 30px;
+        }
+        .fa {
+            color: $dark;
+            padding: 5px;
+            &:hover {
+                text-shadow: 0 0 1px $dark;
+            }
+        }
+    }
+    #subTitle {
+        position: absolute;
+        top: 75px;
+        left: 700px;
+        font: {
+            family: $textFont;
+        }
+    }
+}
+
+#navBarSection{
+    width: 20%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #navBarContainer {
+        width: 190px;
+        height: 200px;
+        position: relative;
+        top: 120px;
+        left: 30px;        
+        #navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font: {
+                family: $titleFont;
+                size: 25px;
+            }
+            .navList a {
+                display: block;
+                color: $dark;
+                padding: 8px 16px;
+                border-radius: 5px 20px;
+                text-decoration: none;
+                &:hover {
+                    text-shadow: 0 0 1px $dark;
+                    background: {
+                        color: darken($orange,3%);                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+#carousel{
+    width: 80%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $blue;
+    }
+    
+}
+
+#iconTabs{
+    width: 100%;
+    height: 360px;
+    float: left;
+    background: {
+        color: $dark;
+    }
+    #iconHolder {
+            width: 90%;
+            height: 95%;
+            position: relative;
+            top: 5.5%;
+            left: 5%;
+            .tabHolder{
+            width: 300px;
+            height: 320px;
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px;
+            margin: 9px 0 15px 0;
+            .fa{
+                color: $orange;
+                font: {
+                    size: 65px;
+                }
+            }
+            .iconTitle {
+                font: {
+                    family: $titleFont;
+                    size: 35px;
+                }
+                color: $orange;
+                line-height: 1.5;
+            }
+            .iconText {
+                font: {
+                    family: $textFont;
+                }
+                color: $orange;
+            }
+        }
+    }
+}
+
+#quote {
+    width: 100%;
+    height: 360px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #quoteTitle{
+        font:{
+            size: 55px;
+            family: $titleFont;
+        }
+        color: $dark;
+        position: relative;
+        top: 35px;
+        left: 40px;
+    }
+    #qText{
+            font: {
+                family: $textFont;
+                size: 35px;
+            }
+            color: $dark;
+            position: relative;
+            top: 75px;
+            left: 40px;
+        }
+}
+
+#footer {
+    width: 100%;
+    height: 120px;
+    float: left;
+    background: {
+        color: $dark;
+    }
+}
