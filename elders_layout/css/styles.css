@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+/*
+effects variables
+*/
+/*
+font variables
+*/
+/*
+color variables
+*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+html {
+  overflow-x: hidden; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+HEAD SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#head {
+  width: 100%;
+  height: 120px;
+  float: left;
+  background-color: #FFAB00; }
+  #head #title {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    color: #221E26;
+    font-family: "Righteous";
+    font-size: 100px; }
+  #head #icons {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 30px; }
+    #head #icons .fa {
+      color: #221E26;
+      padding: 5px; }
+      #head #icons .fa:hover {
+        text-shadow: 0 0 1px #221E26; }
+  #head #subTitle {
+    position: absolute;
+    top: 75px;
+    left: 700px;
+    font-family: "Comfortaa"; }
+  #head #date {
+    position: relative;
+    top: 20px;
+    left: 1200px;
+    font-family: "Comfortaa";
+    font-size: 20px; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+NAVIGATION BAR
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#navBarSection {
+  width: 20%;
+  height: 540px;
+  float: left;
+  background-color: #FFAB00; }
+  #navBarSection #navBarContainer {
+    width: 190px;
+    height: 200px;
+    position: relative;
+    top: 120px;
+    left: 30px; }
+    #navBarSection #navBarContainer #navBar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: "Righteous";
+      font-size: 25px; }
+      #navBarSection #navBarContainer #navBar .navList a {
+        display: block;
+        color: #221E26;
+        padding: 8px 16px;
+        border-radius: 5px 20px;
+        text-decoration: none; }
+        #navBarSection #navBarContainer #navBar .navList a:hover {
+          text-shadow: 0 0 1px #221E26;
+          background-color: #f0a100; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+CAROUSEL SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#carousel1 {
+  width: 80%;
+  height: 540px;
+  float: left;
+  background-color: #012873;
+  background-image: url("dore.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative; }
+  #carousel1 #readTitleText1 {
+    text-align: left;
+    text-shadow: 1.5px 1.5px #221E26;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    color: #FFF8D8;
+    font-family: "Comfortaa"; }
+    #carousel1 #readTitleText1 h1 {
+      font-size: 60px; }
+
+#iconTabs {
+  width: 100%;
+  height: 360px;
+  float: left;
+  background-color: #221E26; }
+  #iconTabs #iconHolder {
+    width: 90%;
+    height: 95%;
+    position: relative;
+    top: 5.5%;
+    left: 5%; }
+    #iconTabs #iconHolder .tabHolder {
+      width: 300px;
+      height: 320px;
+      display: inline-block;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 10px;
+      margin: 9px 0 15px 0; }
+      #iconTabs #iconHolder .tabHolder .fa {
+        color: #FFAB00;
+        font-size: 65px; }
+      #iconTabs #iconHolder .tabHolder .iconTitle {
+        font-family: "Righteous";
+        font-size: 35px;
+        color: #FFAB00;
+        line-height: 1.5; }
+      #iconTabs #iconHolder .tabHolder .iconText {
+        font-family: "Comfortaa";
+        color: #FFAB00; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+QUOTE SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#quote {
+  width: 100%;
+  height: 300px;
+  float: left;
+  background-color: #FFAB00; }
+  #quote #quoteTitle {
+    font-size: 55px;
+    font-family: "Righteous";
+    color: #221E26;
+    position: relative;
+    top: 35px;
+    left: 40px; }
+  #quote #qText {
+    font-family: "Comfortaa";
+    font-size: 35px;
+    color: #221E26;
+    position: relative;
+    top: 75px;
+    left: 40px; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+FOOTER SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#footer {
+  width: 100%;
+  height: 220px;
+  float: left;
+  background-color: #221E26; }
+  #footer .footList {
+    position: relative;
+    top: 40px;
+    left: 600px;
+    padding-right: 60px;
+    border-right: 1px solid #FFAB00;
+    font-family: "Comfortaa";
+    display: inline-block;
+    text-decoration: none; }
+    #footer .footList ul {
+      list-style-type: none; }
+      #footer .footList ul li {
+        padding: 6px 5px; }
+        #footer .footList ul li a {
+          color: #FFF8D8;
+          text-decoration: none;
+          transition: 0.5s; }
+          #footer .footList ul li a:hover {
+            color: #FFAB00; }
+  #footer #workshopId {
+    position: relative;
+    left: 50px; }
+    #footer #workshopId #TH7 {
+      font-family: "Comfortaa";
+      font-size: 12px;
+      color: #FFF8D8; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+BLOG SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#blogHeader {
+  width: 80%;
+  height: 540px;
+  float: left;
+  background-color: #221E26; }
+  #blogHeader #blogPhoto {
+    width: 250px;
+    height: 500px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    float: left;
+    background-color: #FFAB00; }
+  #blogHeader #dailyQuestion {
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    color: #FFAB00; }
+    #blogHeader #dailyQuestion #dailyTitle {
+      font-family: "Righteous";
+      font-size: 100px; }
+    #blogHeader #dailyQuestion #dailyText1 {
+      font-family: "Comfortaa";
+      font-size: 60px; }
+    #blogHeader #dailyQuestion #dailyText2 {
+      font-family: "Comfortaa"; }
+    #blogHeader #dailyQuestion .shareLine {
+      position: relative;
+      top: 150px;
+      font-family: "Comfortaa";
+      font-size: 40px; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+COMMENT SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#commentHeader {
+  width: 100%;
+  height: 600px;
+  float: left;
+  background-color: #FFAB00; }
+  #commentHeader #commentSection {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 97%;
+    height: 560px;
+    background-color: #221E26; }
+    #commentHeader #commentSection #addComment {
+      width: 300px;
+      height: 520px;
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background-color: #FFAB00; }
+      #commentHeader #commentSection #addComment #addTitle {
+        font-family: "Righteous";
+        font-size: 30px;
+        position: relative;
+        top: 15px;
+        left: 15px; }
+      #commentHeader #commentSection #addComment #addUser {
+        padding: 8px 6px;
+        background-color: #221E26;
+        color: #FFAB00;
+        font-family: "Righteous";
+        font-size: 17px;
+        border: none;
+        position: relative;
+        top: 20px;
+        left: 15px; }
+      #commentHeader #commentSection #addComment #addInput {
+        width: 240px;
+        height: 330px;
+        border: none;
+        background-color: #ffc44d;
+        font-family: "Comfortaa";
+        font-size: 15px;
+        position: relative;
+        top: 35px;
+        left: 15px; }
+      #commentHeader #commentSection #addComment #addButton {
+        border: none;
+        padding: 16px 14px;
+        background-color: #221E26;
+        font-family: "Righteous";
+        color: #FFAB00;
+        cursor: pointer;
+        position: relative;
+        top: 45px;
+        left: 175px; }
+    #commentHeader #commentSection #commentArea {
+      width: 72%;
+      height: 520px;
+      position: absolute;
+      top: 0;
+      left: 320px; }
+      #commentHeader #commentSection #commentArea #commentList {
+        font-family: "Comfortaa";
+        font-size: 19px; }
+        #commentHeader #commentSection #commentArea #commentList .commentUnit {
+          max-width: 880px;
+          cursor: pointer;
+          padding: 12px;
+          background-color: #FFAB00;
+          list-style-type: none;
+          border-bottom: 2px solid #221E26;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -user-select: none; }
+    #commentHeader #commentSection .commentLeft {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 6px;
+      color: #EEB412;
+      font-size: 27px;
+      background-color: #1C1A1C; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+READS SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#reads {
+  width: 80%;
+  height: 540px;
+  float: left;
+  background-color: #012873;
+  background-image: url("inferno.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative; }
+  #reads #readTitleText {
+    text-align: left;
+    text-shadow: 1.5px 1.5px #221E26;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    color: #FFF8D8;
+    font-family: "Comfortaa"; }
+    #reads #readTitleText h1 {
+      font-size: 60px; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+CONTACT SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#carousel2 {
+  width: 80%;
+  height: 540px;
+  float: left;
+  background-color: #012873;
+  background-image: url("dore.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative; }
+  #carousel2 #readTitleText1 {
+    text-align: left;
+    text-shadow: 1.5px 1.5px #221E26;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    color: #FFF8D8;
+    font-family: "Comfortaa"; }
+    #carousel2 #readTitleText1 h1 {
+      font-size: 60px; }
+
+/*# sourceMappingURL=styles.css.map */

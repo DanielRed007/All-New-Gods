@@ -1,0 +1,631 @@
+
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+/*
+effects variables
+*/
+
+
+
+/*
+font variables
+*/
+
+$titleFont: 'Righteous';
+$textFont: 'Comfortaa';
+
+/*
+color variables
+*/
+
+$green: #106E45;
+$orange: #FFAB00;
+$blue: #012873;
+$dark: #221E26;
+$white: #FFF8D8;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+HEAD SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#head {
+    width: 100%;
+    height: 120px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #title {
+        position: absolute;
+        top: 0;
+        left: 40px;
+        color: $dark;
+        font: {
+            family: $titleFont;
+            size: 100px;
+        }
+    }
+    #icons {
+        position: absolute;
+        top: 20px;
+        left: 700px;
+        cursor: pointer;
+        transition: 0.5s;
+        font: {
+            size: 30px;
+        }
+        .fa {
+            color: $dark;
+            padding: 5px;
+            &:hover {
+                text-shadow: 0 0 1px $dark;
+            }
+        }
+    }
+    #subTitle {
+        position: absolute;
+        top: 75px;
+        left: 700px;
+        font: {
+            family: $textFont;
+        }
+    }
+    #date {
+        position: relative;
+        top: 20px;
+        left: 1200px;
+        font: {
+            family: $textFont;
+            size: 20px;
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+NAVIGATION BAR
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#navBarSection{
+    width: 20%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #navBarContainer {
+        width: 190px;
+        height: 200px;
+        position: relative;
+        top: 120px;
+        left: 30px;        
+        #navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font: {
+                family: $titleFont;
+                size: 25px;
+            }
+            .navList a {
+                display: block;
+                color: $dark;
+                padding: 8px 16px;
+                border-radius: 5px 20px;
+                text-decoration: none;
+                &:hover {
+                    text-shadow: 0 0 1px $dark;
+                    background: {
+                        color: darken($orange,3%);                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+CAROUSEL SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#carousel1 {
+    width: 80%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $blue;
+        image: url("dore.jpg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        position: relative;
+    }
+    #readTitleText1{
+        h1 {
+            font: {
+                size: 60px;
+            }
+        }
+        text: {
+            align: left;
+            shadow: 1.5px 1.5px $dark;
+        }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%,-50%);
+        color: $white;
+        font: {
+            family: $textFont;
+        }
+    }
+}
+
+#iconTabs{
+    width: 100%;
+    height: 360px;
+    float: left;
+    background: {
+        color: $dark;
+    }
+    #iconHolder {
+            width: 90%;
+            height: 95%;
+            position: relative;
+            top: 5.5%;
+            left: 5%;
+            .tabHolder{
+            width: 300px;
+            height: 320px;
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px;
+            margin: 9px 0 15px 0;
+            .fa{
+                color: $orange;
+                font: {
+                    size: 65px;
+                }
+            }
+            .iconTitle {
+                font: {
+                    family: $titleFont;
+                    size: 35px;
+                }
+                color: $orange;
+                line-height: 1.5;
+            }
+            .iconText {
+                font: {
+                    family: $textFont;
+                }
+                color: $orange;
+            }
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+QUOTE SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#quote {
+    width: 100%;
+    height: 300px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #quoteTitle{
+        font:{
+            size: 55px;
+            family: $titleFont;
+        }
+        color: $dark;
+        position: relative;
+        top: 35px;
+        left: 40px;
+    }
+    #qText{
+            font: {
+                family: $textFont;
+                size: 35px;
+            }
+            color: $dark;
+            position: relative;
+            top: 75px;
+            left: 40px;
+        }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+FOOTER SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#footer {
+    width: 100%;
+    height: 220px;
+    float: left;
+    background: {
+        color: $dark;
+    }
+    .footList{
+        position: relative;
+        top: 40px;
+        left: 600px;
+        padding-right: 60px;
+        border-right: 1px solid $orange;
+        font: {
+            family: $textFont;
+        }
+        display: inline-block;
+        text-decoration: none;
+        ul {
+            list-style-type: none;
+            li{
+                padding: 6px 5px;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    #workshopId{
+        position: relative;
+        left: 50px;
+        #TH7{
+            
+            font:{
+                family: $textFont;
+                size: 12px;
+            }
+            color: $white;
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+BLOG SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#blogHeader {
+    width: 80%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $dark;
+    }
+    #blogPhoto{
+        width: 250px;
+        height: 500px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        float: left;
+        background: {
+            color: $orange;
+        }
+    }
+    #dailyQuestion{
+        float: left;
+        position: relative;
+        top: 20px;
+        left: 50px;
+        color: $orange;
+        #dailyTitle {
+            font: {
+                family: $titleFont;
+                size: 100px;
+            }
+        }
+        #dailyText1 {
+            font: {
+                family: $textFont;
+                size: 60px;
+            }
+        }
+        #dailyText2 {
+            font: {
+                family: $textFont;
+            }
+        }
+        .shareLine {
+            position: relative;
+            top: 150px;
+            font: {
+                family: $textFont;
+                size: 40px;
+            }
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+COMMENT SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#commentHeader {
+    width: 100%;
+    height: 600px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #commentSection {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        width: 97%;
+        height: 560px;
+        background: {
+            color: $dark;
+        }
+        #addComment {
+            width: 300px;
+            height: 520px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: {
+                color: $orange;
+            }
+            #addTitle {
+                font: {
+                    family: $titleFont;
+                    size: 30px;
+                }
+                position: relative;
+                top: 15px;
+                left: 15px;
+            }
+            #addUser {
+                padding: 8px 6px;
+                background: {
+                    color: $dark;
+                }
+                color: $orange;
+                font: {
+                    family: $titleFont;
+                    size: 17px;
+                }
+                border: none;
+                position: relative;
+                top: 20px;
+                left: 15px;
+            }
+            #addInput {
+                width: 240px;
+                height: 330px;
+                border: none;
+                background: {
+                    color: lighten($orange,15%);
+                }
+                font: {
+                    family: $textFont;
+                    size: 15px;
+                }
+                position: relative;
+                top: 35px;
+                left: 15px;
+            }
+            #addButton {
+                border: none;
+                padding: 16px 14px;
+                background: {
+                    color: $dark;
+                }
+                font: {
+                    family: $titleFont;
+                }
+                color: $orange;
+                cursor: pointer;
+                position: relative;
+                top: 45px;
+                left: 175px;
+            }
+        }
+        #commentArea {
+            width: 72%;
+            height: 520px;
+            position: absolute;
+            top: 0;
+            left: 320px;
+            #commentList {
+                font: {
+                    family: $textFont;
+                    size: 19px;
+                }
+                .commentUnit {
+                    max-width: 880px;
+                    cursor: pointer;
+                    padding: 12px;
+                    background: {
+                        color: $orange;
+                    }
+                    list-style-type: none;
+                    border-bottom: 2px solid $dark;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -user-select: none;   
+                }
+            }
+        }
+        .commentLeft {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 6px;
+            color: #EEB412;
+            font-size: 27px;
+            background-color: #1C1A1C;
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+READS SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#reads {
+    width: 80%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $blue;
+        image: url("inferno.jpg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        position: relative;
+    }
+    #readTitleText{
+        h1 {
+            font: {
+                size: 60px;
+            }
+        }
+        text: {
+            align: left;
+            shadow: 1.5px 1.5px $dark;
+        }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%,-50%);
+        color: $white;
+        font: {
+            family: $textFont;
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+CONTACT SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#carousel2 {
+    width: 80%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $blue;
+        image: url("dore.jpg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        position: relative;
+    }
+    #readTitleText1{
+        h1 {
+            font: {
+                size: 60px;
+            }
+        }
+        text: {
+            align: left;
+            shadow: 1.5px 1.5px $dark;
+        }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%,-50%);
+        color: $white;
+        font: {
+            family: $textFont;
+        }
+    }
+}
