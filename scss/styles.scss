@@ -93,7 +93,28 @@ HEAD SECTION
             family: $textFont;
         }
     }
+    #date {
+        position: relative;
+        top: 20px;
+        left: 1200px;
+        font: {
+            family: $textFont;
+            size: 20px;
+        }
+    }
 }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+NAVIGATION BAR
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
 
 #navBarSection{
     width: 20%;
@@ -132,6 +153,18 @@ HEAD SECTION
         }
     }
 }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+CAROUSEL SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
 
 #carousel{
     width: 80%;
@@ -189,9 +222,21 @@ HEAD SECTION
     }
 }
 
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+QUOTE SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
 #quote {
     width: 100%;
-    height: 360px;
+    height: 300px;
     float: left;
     background: {
         color: $orange;
@@ -218,11 +263,254 @@ HEAD SECTION
         }
 }
 
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+FOOTER SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
 #footer {
     width: 100%;
-    height: 120px;
+    height: 220px;
     float: left;
     background: {
         color: $dark;
+    }
+    .footList{
+        position: relative;
+        top: 40px;
+        left: 600px;
+        padding-right: 60px;
+        border-right: 1px solid $orange;
+        font: {
+            family: $textFont;
+        }
+        display: inline-block;
+        text-decoration: none;
+        ul {
+            list-style-type: none;
+            li{
+                padding: 6px 5px;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    #workshopId{
+        position: relative;
+        left: 50px;
+        #TH7{
+            
+            font:{
+                family: $textFont;
+                size: 12px;
+            }
+            color: $white;
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+BLOG SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#blogHeader {
+    width: 80%;
+    height: 540px;
+    float: left;
+    background: {
+        color: $dark;
+    }
+    #blogPhoto{
+        width: 250px;
+        height: 500px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        float: left;
+        background: {
+            color: $orange;
+        }
+    }
+    #dailyQuestion{
+        float: left;
+        position: relative;
+        top: 20px;
+        left: 50px;
+        color: $orange;
+        #dailyTitle {
+            font: {
+                family: $titleFont;
+                size: 100px;
+            }
+        }
+        #dailyText1 {
+            font: {
+                family: $textFont;
+                size: 60px;
+            }
+        }
+        #dailyText2 {
+            font: {
+                family: $textFont;
+            }
+        }
+        .shareLine {
+            position: relative;
+            top: 150px;
+            font: {
+                family: $textFont;
+                size: 40px;
+            }
+        }
+    }
+}
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+COMMENT SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+
+#commentHeader {
+    width: 100%;
+    height: 600px;
+    float: left;
+    background: {
+        color: $orange;
+    }
+    #commentSection {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        width: 97%;
+        height: 560px;
+        background: {
+            color: $dark;
+        }
+        #addComment {
+            width: 300px;
+            height: 520px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: {
+                color: $orange;
+            }
+            #addTitle {
+                font: {
+                    family: $titleFont;
+                    size: 30px;
+                }
+                position: relative;
+                top: 15px;
+                left: 15px;
+            }
+            #addUser {
+                padding: 8px 6px;
+                background: {
+                    color: $dark;
+                }
+                color: $orange;
+                font: {
+                    family: $titleFont;
+                    size: 17px;
+                }
+                border: none;
+                position: relative;
+                top: 20px;
+                left: 15px;
+            }
+            #addInput {
+                border: none;
+                background: {
+                    color: lighten($orange,15%);
+                }
+                font: {
+                    family: $textFont;
+                    size: 15px;
+                }
+                position: relative;
+                top: 35px;
+                left: 15px;
+            }
+            #addButton {
+                border: none;
+                padding: 16px 14px;
+                background: {
+                    color: $dark;
+                }
+                font: {
+                    family: $titleFont;
+                }
+                color: $orange;
+                cursor: pointer;
+                position: relative;
+                top: 45px;
+                left: 175px;
+            }
+        }
+        #commentArea {
+            width: 72%;
+            height: 520px;
+            position: absolute;
+            top: 0;
+            left: 320px;
+            #commentList {
+                font: {
+                    family: $textFont;
+                    size: 19px;
+                }
+                .commentUnit {
+                    max-width: 880px;
+                    cursor: pointer;
+                    padding: 12px;
+                    background: {
+                        color: $orange;
+                    }
+                    list-style-type: none;
+                    border-bottom: 2px solid $dark;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -user-select: none;   
+                }
+            }
+        }
+        .commentLeft {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 6px;
+            color: #EEB412;
+            font-size: 27px;
+            background-color: #1C1A1C;
+        }
     }
 }

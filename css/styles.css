@@ -60,7 +60,24 @@ HEAD SECTION
     top: 75px;
     left: 700px;
     font-family: "Comfortaa"; }
+  #head #date {
+    position: relative;
+    top: 20px;
+    left: 1200px;
+    font-family: "Comfortaa";
+    font-size: 20px; }
 
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+NAVIGATION BAR
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
 #navBarSection {
   width: 20%;
   height: 540px;
@@ -88,6 +105,17 @@ HEAD SECTION
           text-shadow: 0 0 1px #221E26;
           background-color: #f0a100; }
 
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+CAROUSEL SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
 #carousel {
   width: 80%;
   height: 540px;
@@ -126,9 +154,20 @@ HEAD SECTION
         font-family: "Comfortaa";
         color: #FFAB00; }
 
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+QUOTE SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
 #quote {
   width: 100%;
-  height: 360px;
+  height: 300px;
   float: left;
   background-color: #FFAB00; }
   #quote #quoteTitle {
@@ -146,10 +185,184 @@ HEAD SECTION
     top: 75px;
     left: 40px; }
 
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+FOOTER SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
 #footer {
   width: 100%;
-  height: 120px;
+  height: 220px;
   float: left;
   background-color: #221E26; }
+  #footer .footList {
+    position: relative;
+    top: 40px;
+    left: 600px;
+    padding-right: 60px;
+    border-right: 1px solid #FFAB00;
+    font-family: "Comfortaa";
+    display: inline-block;
+    text-decoration: none; }
+    #footer .footList ul {
+      list-style-type: none; }
+      #footer .footList ul li {
+        padding: 6px 5px; }
+        #footer .footList ul li a {
+          color: #FFF8D8;
+          text-decoration: none;
+          transition: 0.5s; }
+          #footer .footList ul li a:hover {
+            color: #FFAB00; }
+  #footer #workshopId {
+    position: relative;
+    left: 50px; }
+    #footer #workshopId #TH7 {
+      font-family: "Comfortaa";
+      font-size: 12px;
+      color: #FFF8D8; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+BLOG SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#blogHeader {
+  width: 80%;
+  height: 540px;
+  float: left;
+  background-color: #221E26; }
+  #blogHeader #blogPhoto {
+    width: 250px;
+    height: 500px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    float: left;
+    background-color: #FFAB00; }
+  #blogHeader #dailyQuestion {
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    color: #FFAB00; }
+    #blogHeader #dailyQuestion #dailyTitle {
+      font-family: "Righteous";
+      font-size: 100px; }
+    #blogHeader #dailyQuestion #dailyText1 {
+      font-family: "Comfortaa";
+      font-size: 60px; }
+    #blogHeader #dailyQuestion #dailyText2 {
+      font-family: "Comfortaa"; }
+    #blogHeader #dailyQuestion .shareLine {
+      position: relative;
+      top: 150px;
+      font-family: "Comfortaa";
+      font-size: 40px; }
+
+/*
+-----------------------------------------------------------------------------------------------------
+
+
+
+COMMENT SECTION
+
+
+
+-----------------------------------------------------------------------------------------------------
+*/
+#commentHeader {
+  width: 100%;
+  height: 600px;
+  float: left;
+  background-color: #FFAB00; }
+  #commentHeader #commentSection {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 97%;
+    height: 560px;
+    background-color: #221E26; }
+    #commentHeader #commentSection #addComment {
+      width: 300px;
+      height: 520px;
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background-color: #FFAB00; }
+      #commentHeader #commentSection #addComment #addTitle {
+        font-family: "Righteous";
+        font-size: 30px;
+        position: relative;
+        top: 15px;
+        left: 15px; }
+      #commentHeader #commentSection #addComment #addUser {
+        padding: 8px 6px;
+        background-color: #221E26;
+        color: #FFAB00;
+        font-family: "Righteous";
+        font-size: 17px;
+        border: none;
+        position: relative;
+        top: 20px;
+        left: 15px; }
+      #commentHeader #commentSection #addComment #addInput {
+        border: none;
+        background-color: #ffc44d;
+        font-family: "Comfortaa";
+        font-size: 15px;
+        position: relative;
+        top: 35px;
+        left: 15px; }
+      #commentHeader #commentSection #addComment #addButton {
+        border: none;
+        padding: 16px 14px;
+        background-color: #221E26;
+        font-family: "Righteous";
+        color: #FFAB00;
+        cursor: pointer;
+        position: relative;
+        top: 45px;
+        left: 175px; }
+    #commentHeader #commentSection #commentArea {
+      width: 72%;
+      height: 520px;
+      position: absolute;
+      top: 0;
+      left: 320px; }
+      #commentHeader #commentSection #commentArea #commentList {
+        font-family: "Comfortaa";
+        font-size: 19px; }
+        #commentHeader #commentSection #commentArea #commentList .commentUnit {
+          max-width: 880px;
+          cursor: pointer;
+          padding: 12px;
+          background-color: #FFAB00;
+          list-style-type: none;
+          border-bottom: 2px solid #221E26;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -user-select: none; }
+    #commentHeader #commentSection .commentLeft {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 6px;
+      color: #EEB412;
+      font-size: 27px;
+      background-color: #1C1A1C; }
 
 /*# sourceMappingURL=styles.css.map */
